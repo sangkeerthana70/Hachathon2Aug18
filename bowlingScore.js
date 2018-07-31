@@ -6,9 +6,9 @@ function CalculateBowlingScore(arr)
 	let totalScore = 0;
 	for (var i = 0; i < arr.length - 1; i=i+2)
 	{
-		console.log("i = ",i);
-		console.log("roll 1 = ", arr[i]);
-		console.log("roll 2 = ", arr[i+1]);
+		//console.log("i = ",i);
+		//console.log("roll 1 = ", arr[i]);
+		//console.log("roll 2 = ", arr[i+1]);
 		
 		
 		// add frame score to total
@@ -18,17 +18,17 @@ function CalculateBowlingScore(arr)
 		// strike
 		if (arr[i] == 10) 
 		{
-			console.log("strike!");
+			//console.log("strike!");
 			// for last frame only one extra roll allowed
 			if (i + 2 == arr.length)
 			{
 				totalScore += arr[i+2];
-				console.log("bonus = ",arr[i+2]);
+				//console.log("bonus = ",arr[i+2]);
 			}
 			else
 			{
 				totalScore += arr[i+2] + arr[i+3];
-				console.log("bonus = ",arr[i+2] + arr[i+3]);
+				//console.log("bonus = ",arr[i+2] + arr[i+3]);
 			}
 		}
 		
